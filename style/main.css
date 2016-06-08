@@ -1,0 +1,19 @@
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ,url(../assets/images/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+hero-text-box {
+	position: absolute;
+
+}
