@@ -1,19 +1,263 @@
-
+/*--------------------------------------*/
+/*BASIC SETUP*/
+/*--------------------------------------*/
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
 	font-family: 'Open Sans', sans-serif;
 }
 
+/*--------------------------------------*/
+/*RE-USEABLE COMPONENTS*/
+/*--------------------------------------*/
+
+/*-------heading--------*/
+h1, 
+h2, 
+h3 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0;
+}	
+
+h1 {
+	font-size: 2.5rem;
+	word-spacing: 3px;	
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	color: #000;
+	font-size: 2rem;
+	text-align: center;
+	word-spacing: 1px;	
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+h2:after {
+	display: block;
+	content: " ";
+	height: 2px;
+	background-color: #e75e22;
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+h3 {
+	color: #000;
+	margin: 5px 0;
+}
+
+p {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*-------paragraphes--------*/
+.long-copy {
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+/*-------box--------*/
+.box {
+	padding: 1%;
+}
+
+.box p {
+	font-size: 1rem;
+	line-height: 145%;
+}
+
+/*-------icon---------*/
+.icon-big {
+	font-size: 3.5rem;
+	display: block;
+	color: #e75e22;
+}
+
+/*-------buttons--------*/
+.btn {
+	display: inline-block;
+	padding: 10px 25px;
+	border-radius: 200px;
+	text-decoration: none;
+	font-weight: 300;
+	margin: 10px 5px;
+	transition: all 0.3s ease-out;
+}
+
+	.btn-full {
+		border: 1px solid #e75e22;
+		background: #e75e22;
+		color: #fff;
+	}
+
+	.btn-full:hover {
+		background-color: #c14915;
+		border-color: #c14915;
+	}
+
+	.btn-ghost {
+		border: 1px solid #e75e22;
+		color: #e75e22;
+	}	
+
+	.btn-ghost:hover {
+		background: #e75e22;
+		color: #fff;
+	}
+
+/*--------------------------------------*/
+/*HEADER*/
+/*--------------------------------------*/
 header {
-	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ,url(../assets/images/hero.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../assets/images/hero.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
 }
-hero-text-box {
-	position: absolute;
 
+	.hero-text-box {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+.logo {
+	height: 128px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
 }
+
+.main-nav {
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+	.main-nav li {
+		display: inline-block;
+		margin-left: 40px;
+		padding: 8px 0;
+		border-bottom: 2px solid transparent;
+	}
+
+	.main-nav li a {
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 300px;
+		font-size: 1.1rem;
+	}
+
+	.main-nav li:hover {		
+		border-bottom: 2px solid #e75e22;
+		transition: all 0.3s ease-out;
+	}
+
+/*--------------------------------------*/
+/* MEALS */
+/*--------------------------------------*/
+
+.favorite-meals {
+	padding: 0;
+}
+
+.meals-showcase {
+	list-style: none;
+	width: 100%;
+}
+
+.meals-showcase li {
+	display: inline-block;
+	float: left;
+	width: 25%;
+}
+
+.meal-photo {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.meal-photo img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: all 0.3s ease-out;
+}
+
+.meal-photo img:hover {
+	opacity: 1;
+	transform: scale(1.03);
+}
+
+
+/*--------------------------------------*/
+/* HOW IT WORKS */
+/*--------------------------------------*/
+
+.section-steps {
+	background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+	text-align: right;
+	padding-right: 3%;
+	margin-top: 30px;
+}
+
+.steps-box:last-child {
+	padding-left: 3%;
+	margin-top: 70px;
+}
+
+.works-step:last-of-type {
+	margin-bottom: 50px;
+}
+
+.app-screen {
+width: 50%;
+}
+
+.works-step {
+	margin-bottom: 50px;
+}
+
+.works-step div {
+	color: #e75e22;
+	border: 2px solid #e75e22;
+	display: inline-block;
+	border-radius: 50%;
+	width: 54px;
+	height: 54px;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	font-size: 1.7rem;
+	margin-right: 25px;
+}
+
+.btn-app img {
+	height: 50px;
+	width: auto;
+	margin-right: 10px;
+}
+

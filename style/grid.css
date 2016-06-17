@@ -13,15 +13,33 @@
 	width: 32.26%; 
 }
 
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
 .col {
 	display: block;
 	float: left;
-	margin: 1% 0 1% 1%;
+	margin: 0 0 1% 1%;
 }
 
 .row {
 	max-width: 1140px;
 	margin: 0 auto;
+}
+
+section {
+	padding: 80px 0;
+	overflow: auto;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
@@ -35,5 +53,12 @@
 	}
 	.span_1_of_3 {
 		width: 100%;
+	}
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, 
+	.span_2_of_4, 
+	.span_3_of_4, 
+	.span_4_of_4 { 
+		width: 100%; 
 	}
 }
